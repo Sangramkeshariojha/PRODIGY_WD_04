@@ -1,0 +1,27 @@
+
+{
+  "name": "prodigy-wd-04",
+  "version": "1.0.0",
+  "description": "Redis caching API for Prodigy InfoTech Task 04",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "prisma": "6.19.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
